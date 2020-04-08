@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 
 export class FamilyService {
   //baseUrl: string = 'http://localhost:50745';
-  baseUrl: string = 'http://lockdown20200408122040.azurewebsites.net';
+  baseUrl: string = 'https://lockdown20200408122040.azurewebsites.net';
   familyId: string = localStorage.getItem("userId");
   constructor(private http: HttpClient, private MyRoute: Router) { }
 
