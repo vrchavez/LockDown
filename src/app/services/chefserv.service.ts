@@ -7,8 +7,8 @@ import { catchError } from 'rxjs/operators';
 })
 
 export class ChefservService {
-  baseUrl: string = 'http://localhost:50025/api';
-  //baseUrl: string = 'https://lockdown20200408122040.azurewebsites.net';
+  //baseUrl: string = 'http://localhost:50025/api';
+  baseUrl: string = 'https://lockdown20200408122040.azurewebsites.net';
   constructor(private http: HttpClient) { }
 
   addFood(food) {
