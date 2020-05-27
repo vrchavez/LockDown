@@ -12,8 +12,8 @@ const helper = new JwtHelperService();
   providedIn: 'root'
 })
 export class AuthService {
-  //baseUrl: string = 'http://localhost:50745/userAuth';
-  baseUrl: string = 'https://lockdown20200408122040.azurewebsites.net/userAuth';
+  baseUrl: string = 'http://localhost:50745/userAuth';
+  //baseUrl: string = 'https://lockdown20200408122040.azurewebsites.net/userAuth';
   constructor(private http: HttpClient, private MyRoute: Router) { }
 
   registerUser(user) {

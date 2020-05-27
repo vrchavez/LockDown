@@ -1,41 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-// import {
-//   FormBuilder,
-//   FormGroup,
-//   Validators,
-//   FormControl,
-//   FormArray
-// } from '@angular/forms';
-
-
-// export class MovementComponent implements OnInit {
-//   public memberForm: FormGroup;
-
-//   constructor(private fb: FormBuilder) { }
-
-//   ngOnInit(){
-//     this.memberForm = this.fb.group({
-//       Name: new FormControl(),
-//       PhoneNumber: new FormControl(),
-//       Places: new FormControl()
-//     });
-//   }
-
-//   cancel(event) {
-//     event.preventDefault();
-//     let element: HTMLElement = document.getElementById("accordionPlus");
-//     element.click();
-//     this.memberForm.reset();
-//   }
-
-//   onSubmit(submitType) {
-//     if (submitType === 'add') {
-//       console.log('submitted');
-//     }
-//   }
-
-// }
-
 import { Component, OnInit, TemplateRef, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
@@ -169,6 +131,7 @@ export class MovementComponent implements OnInit {
       var newRow = [];
       for (var x = 0; x < 3; x++) {
         var value = data[i + x];
+        console.log(value);
         if (!value) {
           break;
         }
